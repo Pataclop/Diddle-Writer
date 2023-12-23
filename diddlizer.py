@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: iso-8859-15 -*-
-
 import cv2
 import numpy as np
 import sys
@@ -79,5 +76,7 @@ def fun():
 
     save(pageCount, im)
 
-
+if len(sys.argv) == 1:
+    print("usage : python diddlizer.py file_with_text.txt")
+    sys.exit()
 fun()
